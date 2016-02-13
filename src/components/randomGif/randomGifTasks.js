@@ -3,7 +3,7 @@ import _ from 'lodash';
 import {newGif} from './randomGifActions';
 
 export const fetchRandomGif = (topic) => {
-  return request.get('http://api.giphy.com/v1/gifs/random')
+  return request.get('https://api.giphy.com/v1/gifs/random')
     .query({
       api_key: 'dc6zaTOxFJmzC',
       tag: topic,
