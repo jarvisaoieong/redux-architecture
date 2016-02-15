@@ -23,7 +23,7 @@ Redux is awesome. In order to make redux architecture fractal. We only need two 
 
   What the component needed is model (the data) and dispatch (a way to communicate with the rest architecture). It doesnt need the action callback as the parameters. It is an implementation detail that encapsulated by the reducer. IMO, a truly reusable component module was made by View, action, reducer, effect, init. Not just the component view.
 
-This repo is port of the elm architecture examples in redux with redux-loop to show the benefits of hierarchical composition everywhere. In this example, In this example, I used my fork of [redux-loop](https://github.com/jarvisaoieong/redux-loop) and [redux-logger](https://github.com/jarvisaoieong/redux-logger) to demonstrate how to log the high order action and async action. (Please open the console in the [live demo](http://jarvisaoieong.github.io/redux-architecture/).)
+This repo is port of the elm architecture examples in redux with redux-loop to show the benefits of hierarchical composition everywhere. In this example, I used my fork of [redux-loop](https://github.com/jarvisaoieong/redux-loop) and [redux-logger](https://github.com/jarvisaoieong/redux-logger) to demonstrate how to log the high order action and async action. (Please open the console in the [live demo](http://jarvisaoieong.github.io/redux-architecture/).)
 
 ![](http://i.imgur.com/33MQJvu.png)
 
