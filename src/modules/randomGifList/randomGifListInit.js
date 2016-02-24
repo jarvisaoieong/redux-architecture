@@ -1,6 +1,6 @@
 import _ from 'lodash';
 import {loop, Effects} from '@jarvisaoieong/redux-loop';
-import randomGifInit from 'components/randomGif/randomGifInit';
+import randomGifInit from 'modules/randomGif/randomGifInit';
 import {modify} from './randomGifListActions';
 
 export default (topicList = []) => {

@@ -9,7 +9,7 @@ import {
 
 import randomGifReducer, {
   initialState as randomGifInitialState,
-} from 'components/randomGif/randomGifReducer';
+} from 'modules/randomGif/randomGifReducer';
 
 const initialState = {
   first: randomGifInitialState,

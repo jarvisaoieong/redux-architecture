@@ -1,8 +1,8 @@
 import _ from 'lodash';
 import {loop, Effects} from '@jarvisaoieong/redux-loop';
-import randomGifReducer, {initialState as randomGifInitialState} from 'components/randomGif/randomGifReducer';
+import randomGifReducer, {initialState as randomGifInitialState} from 'modules/randomGif/randomGifReducer';
 import {CREATE, MODIFY, modify} from './randomGifListActions';
-import randomGifInit from 'components/randomGif/randomGifInit';
+import randomGifInit from 'modules/randomGif/randomGifInit';
 
 export const initialState = {
   gifList: [{

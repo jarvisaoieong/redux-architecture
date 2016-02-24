@@ -1,5 +1,5 @@
 import {MODIFY_FIRST, MODIFY_SECOND} from './counterPairActions';
-import counterReducer, {initialState as counterInitialState} from 'components/counter/counterReducer';
+import counterReducer, {initialState as counterInitialState} from 'modules/counter/counterReducer';
 
 export const initialState = {
   first: counterInitialState,

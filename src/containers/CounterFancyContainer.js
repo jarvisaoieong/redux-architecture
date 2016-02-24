@@ -1,5 +1,5 @@
 import {connect} from 'react-redux';
-import CounterFancy from 'components/counterFancy/CounterFancy';
+import CounterFancy from 'modules/counterFancy/CounterFancy';
 
 export default connect(
   (state) => ({

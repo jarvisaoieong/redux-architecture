@@ -1,5 +1,5 @@
 import {connect} from 'react-redux';
-import CounterList from 'components/counterList/CounterList';
+import CounterList from 'modules/counterList/CounterList';
 
 export default connect(
   (state) => ({

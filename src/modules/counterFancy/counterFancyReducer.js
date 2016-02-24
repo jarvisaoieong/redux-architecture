@@ -1,7 +1,7 @@
 import {ADD, REMOVE, MODIFY} from './counterFancyActions';
 import _ from 'lodash';
-import counterReducer, {initialState as counterInitialState} from 'components/counter/counterReducer';
-import counterInit from 'components/counter/counterInit';
+import counterReducer, {initialState as counterInitialState} from 'modules/counter/counterReducer';
+import counterInit from 'modules/counter/counterInit';
 
 export const initialState = {
   counters: [{id: 0, data: counterInitialState}],

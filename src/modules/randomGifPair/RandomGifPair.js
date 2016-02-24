@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 
-import RandomGif from 'components/randomGif/RandomGif'
+import RandomGif from 'modules/randomGif/RandomGif'
 import {modifyFirst, modifySecond} from './randomGifPairActions';
 
 export default class RandomGifPair extends Component {

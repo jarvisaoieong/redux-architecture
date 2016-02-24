@@ -1,5 +1,5 @@
 import {connect} from 'react-redux';
-import Counter from 'components/counter/Counter';
+import Counter from 'modules/counter/Counter';
 
 export default connect(
   (state) => ({
