@@ -6,13 +6,16 @@ import counterFancy from 'modules/counterFancy/counterFancyReducer';
 import randomGif from 'modules/randomGif/randomGifReducer';
 import randomGifPair from 'modules/randomGifPair/randomGifPairReducer';
 import randomGifList from 'modules/randomGifList/randomGifListReducer';
+import newGifCounter from 'modules/newGifCounter/newGifCounterReducer';
+import newGifCounterHOR from 'modules/newGifCounter/newGifCounterHOR';
 
 export default combineReducers({
   counter,
   counterPair,
   counterList,
   counterFancy,
-  randomGif,
-  randomGifPair,
-  randomGifList,
+  randomGif: newGifCounterHOR('type')(randomGif),
+  randomGifPair: newGifCounterHOR('action.type')(randomGifPair),
+  randomGifList: newGifCounterHOR('action.type')(randomGifList),
+  newGifCounter,
 });

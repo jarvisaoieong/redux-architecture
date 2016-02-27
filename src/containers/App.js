@@ -7,6 +7,7 @@ import CounterFancyContainer from './CounterFancyContainer';
 import RandomGifContainer from './RandomGifContainer';
 import RandomGifPairContainer from './RandomGifPairContainer';
 import RandomGifListContainer from './RandomGifListContainer';
+import NewGifCounterContainer from './NewGifCounterContainer';
 
 export default class App extends Component {
 
@@ -33,6 +34,8 @@ export default class App extends Component {
         <hr/>
         <h2>7. RandomGifList</h2>
         <RandomGifListContainer />
+        <h2>8. NewGifCounter</h2>
+        <NewGifCounterContainer />
       </div>
     );
   }

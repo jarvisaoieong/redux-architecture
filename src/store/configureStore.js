@@ -12,7 +12,7 @@ export default function configureStore({initialState}) {
 
   if (process.env.NODE_ENV === 'development' && module.hot) {
     module.hot.accept('./reducer', () => {
-      const nextReducer = require('./reducer');
+      const {default: nextReducer} = require('./reducer');
       store.replaceReducer(nextReducer);
     });
   }
