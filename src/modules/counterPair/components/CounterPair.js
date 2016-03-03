@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 
-import Counter from 'modules/counter/Counter'
-import {modifyFirst, modifySecond} from './counterPairActions';
+import {Counter} from 'modules/counter'
+import {modifyFirst, modifySecond} from '../actions';
 
 export default class CounterPair extends Component {
 

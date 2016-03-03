@@ -5,13 +5,14 @@ import {
   MODIFY_SECOND,
   modifyFirst,
   modifySecond,
-} from './randomGifPairActions';
+} from './actions';
 
-import randomGifReducer, {
+import {
+  reducer as randomGifReducer,
   initialState as randomGifInitialState,
-} from 'modules/randomGif/randomGifReducer';
+} from 'modules/randomGif';
 
-const initialState = {
+export const initialState = {
   first: randomGifInitialState,
   second: randomGifInitialState,
 };

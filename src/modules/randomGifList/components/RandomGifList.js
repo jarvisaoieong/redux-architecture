@@ -1,8 +1,8 @@
 import React, {Component} from 'react';
 import _ from 'lodash';
 
-import RandomGif from 'modules/randomGif/RandomGif'
-import {create, modify} from './randomGifListActions';
+import {RandomGif} from 'modules/randomGif'
+import {create, modify} from '../actions';
 
 export default class RandomGifList extends Component {
 

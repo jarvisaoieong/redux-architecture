@@ -1,5 +1,5 @@
 import {connect} from 'react-redux';
-import RandomGif from 'modules/randomGif/RandomGif';
+import {RandomGif} from 'modules/randomGif';
 
 export default connect(
   (state) => ({

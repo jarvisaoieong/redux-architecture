@@ -1,4 +1,4 @@
-import counterInit from 'modules/counter/counterInit';
+import {init as counterInit} from 'modules/counter';
 
 export default (count) => ({
   counters: [{id: 0, data: counterInit(count)}],

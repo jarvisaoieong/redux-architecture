@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import _ from 'lodash';
 
-import {requestMore} from './randomGifActions';
+import {requestMore} from '../actions';
 
 export default class RandomGif extends Component {
 

@@ -1,5 +1,5 @@
 import React from 'react';
-import {inc, dec} from './counterActions';
+import {inc, dec} from '../actions';
 
 export default (props) => {
   const {model, dispatch} = props;

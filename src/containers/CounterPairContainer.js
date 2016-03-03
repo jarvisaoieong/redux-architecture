@@ -1,5 +1,5 @@
 import {connect} from 'react-redux';
-import CounterPair from 'modules/counterPair/CounterPair';
+import {CounterPair} from 'modules/counterPair';
 
 export default connect(
   (state) => ({

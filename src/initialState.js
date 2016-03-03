@@ -1,8 +1,8 @@
 import {loop, Effects} from '@jarvisaoieong/redux-loop';
 
-import randomGifInit from 'modules/randomGif/randomGifInit';
-import randomGifPairInit from 'modules/randomGifPair/randomGifPairInit';
-import randomGifListInit from 'modules/randomGifList/randomGifListInit';
+import {init as randomGifInit} from 'modules/randomGif';
+import {init as randomGifPairInit} from 'modules/randomGifPair';
+import {init as randomGifListInit} from 'modules/randomGifList';
 
 const {
   model: randomGifModel,

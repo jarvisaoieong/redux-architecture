@@ -1,7 +1,7 @@
 import {loop, Effects} from '@jarvisaoieong/redux-loop';
 
-import randomGifInit from 'modules/randomGif/randomGifInit';
-import {modifyFirst, modifySecond} from './randomGifPairActions';
+import {init as randomGifInit} from 'modules/randomGif';
+import {modifyFirst, modifySecond} from './actions';
 
 export default (firstTopic, secondTopic) => {
   const {

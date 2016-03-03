@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 import _ from 'lodash';
 
 import CounterWithRemoveButton from './CounterWithRemoveButton'
-import {add, modify} from './counterFancyActions';
+import {add, modify} from '../actions';
 
 export default class CounterList extends Component {
 

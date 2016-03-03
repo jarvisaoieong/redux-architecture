@@ -1,4 +1,4 @@
-import {INC, DEC} from './counterActions';
+import {INC, DEC} from './actions';
 
 export const initialState = 0;
 

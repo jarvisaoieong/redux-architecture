@@ -1,7 +1,7 @@
 import _ from 'lodash';
 import {loop, Effects} from '@jarvisaoieong/redux-loop';
-import randomGifInit from 'modules/randomGif/randomGifInit';
-import {modify} from './randomGifListActions';
+import {init as randomGifInit} from 'modules/randomGif';
+import {modify} from './actions';
 
 export default (topicList = []) => {
   const gifLoopList = _.map(topicList, randomGifInit);

@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 
-import Counter from 'modules/counter/Counter'
-import {remove, modify} from './counterFancyActions';
+import {Counter} from 'modules/counter'
+import {remove, modify} from '../actions';
 
 export default class CounterWithRemoveButton extends Component {
 

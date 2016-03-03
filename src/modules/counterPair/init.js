@@ -1,4 +1,4 @@
-import counterInit from 'modules/counter/counterInit';
+import {init as counterInit} from 'modules/counter';
 
 export default (first, second) => ({
   first: counterInit(first),

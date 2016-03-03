@@ -1,8 +1,8 @@
 import React, {Component} from 'react';
 import _ from 'lodash';
 
-import Counter from 'modules/counter/Counter'
-import {add, modify, remove} from './counterListActions';
+import {Counter} from 'modules/counter'
+import {add, modify, remove} from '../actions';
 
 export default class CounterList extends Component {
 

@@ -1,11 +1,11 @@
 import {loop, Effects} from '@jarvisaoieong/redux-loop';
 
-import {REQUEST_MORE, NEW_GIF, newGif} from './randomGifActions';
-import {fetchRandomGif} from './randomGifTasks';
+import {REQUEST_MORE, NEW_GIF, newGif} from './actions';
+import {fetchRandomGif} from './tasks';
 
 export const initialState = {
   topic: '',
-  gifUrl: require('./waiting.gif'),
+  gifUrl: require('./components/waiting.gif'),
 };
 
 export default (state = initialState, action) => {

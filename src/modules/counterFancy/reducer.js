@@ -1,7 +1,10 @@
-import {ADD, REMOVE, MODIFY} from './counterListActions';
+import {ADD, REMOVE, MODIFY} from './actions';
 import _ from 'lodash';
-import counterReducer, {initialState as counterInitialState} from 'modules/counter/counterReducer';
-import counterInit from 'modules/counter/counterInit';
+import {
+  reducer as counterReducer,
+  initialState as counterInitialState,
+  init as counterInit
+} from 'modules/counter';
 
 export const initialState = {
   counters: [{id: 0, data: counterInitialState}],
@@ -23,7 +26,7 @@ export default (state = initialState, action) => {
   if (action.type === REMOVE) {
     return {
       ...state,
-      counters: _.drop(state.counters),
+      counters: _.reject(state.counters, (counter) => counter.id === action.id),
     };
   };
 
