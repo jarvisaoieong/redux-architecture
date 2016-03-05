@@ -1,12 +1,10 @@
 import React from 'react';
 import {render} from 'react-dom';
 import {Provider} from 'react-redux';
+import createStore from './helpers/createStore';
+import {App, reducer, init} from 'modules/app';
 
-import configureStore from './store/configureStore';
-import initialState from './initialState';
-import App from 'containers/App';
-
-const store = configureStore({initialState});
+const store = createStore(reducer, init());
 
 render(
   <Provider store={store}>
@@ -15,3 +13,10 @@ render(
 ,
   document.getElementById('app')
 );
+
+if (process.env.NODE_ENV === 'development' && module.hot) {
+  module.hot.accept('modules/app', () => {
+    const {reducer: nextReducer} = require('modules/app');
+    store.replaceReducer(nextReducer);
+  });
+}

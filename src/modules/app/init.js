@@ -19,14 +19,15 @@ const {
   effect: randomGifListEffect,
 } = randomGifListInit(['hello', 'world']);
 
-export default loop({
-  randomGif: randomGifModel,
-  randomGifPair: randomGifPairModel,
-  randomGifList: randomGifListModel,
-},
-  Effects.batch([
-    randomGifEffect,
-    randomGifPairEffect,
-    randomGifListEffect,
-  ])
-);
+export default () =>
+  loop({
+    randomGif: randomGifModel,
+    randomGifPair: randomGifPairModel,
+    randomGifList: randomGifListModel,
+  },
+    Effects.batch([
+      randomGifEffect,
+      randomGifPairEffect,
+      randomGifListEffect,
+    ])
+  )
