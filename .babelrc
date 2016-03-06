@@ -4,10 +4,5 @@
     "transform-runtime",
     "transform-decorators-legacy",
     "lodash"
-  ],
-  "env": {
-    "development": {
-      "presets": ["react-hmre"]
-    }
-  }
+  ]
 }
